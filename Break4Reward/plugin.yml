@@ -1,0 +1,8 @@
+name: Break4Reward
+author: Bobcatsss
+version: 0.1
+api-version: 1.13
+main: me.bobcatsss.break4reward.Break4Reward
+commands:
+  break4reward:
+    description: Main plugin command.

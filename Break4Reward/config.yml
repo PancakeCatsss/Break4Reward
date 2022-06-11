@@ -1,0 +1,13 @@
+Required-GameMode: SURVIVAL
+Required-Tool:
+  - DIAMOND_PICKAXE
+  - NETHERITE_PICKAXE
+  - GOLDEN_PICKAXE
+  - IRON_PICKAXE
+  - STONE_PICKAXE
+  - WOODEN_PICKAXE
+Rewards:
+  STONE:
+    Message: "&6You broke a stone block"
+    Commands:
+      - "say {player} broke a stone block"
