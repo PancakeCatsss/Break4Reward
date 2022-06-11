@@ -13,18 +13,18 @@ public class Break4Reward extends JavaPlugin {
     private RewardManager manager;
     
     public void onEnable() {
-        this.saveDefaultConfig();
-        this.manager = new RewardManager(this);
-        this.registerHandlers();
-        this.registerCommands();
+        saveDefaultConfig();
+        manager = new RewardManager(this);
+        registerHandlers();
+        registerCommands();
     }
     
     private void registerCommands() {
-        this.getCommand("break4reward").setExecutor(new CommandReload(manager));
+        getCommand("break4reward").setExecutor(new CommandReload(manager));
     }
     
     private void registerHandlers() {
-        final PluginManager pm = Bukkit.getPluginManager();
+        PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new BlockBreakHandler(manager), this);
     }
 }

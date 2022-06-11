@@ -43,7 +43,7 @@ public class RewardManager {
         return !requiredTool.isEmpty();
     }
     
-    public boolean isValidTool(final Material material) {
+    public boolean isValidTool(Material material) {
         return requiredTool.contains(material);
     }
     
@@ -89,7 +89,7 @@ public class RewardManager {
     	return false;
     }
     
-    private boolean isValidMaterial(final String material) {
+    private boolean isValidMaterial(String material) {
     	for(Material mat : Material.values()) {
     		if(mat.name().equalsIgnoreCase(material)) return true;
     	}
